@@ -1,0 +1,12 @@
+    <form class="edit-user-form">
+      <legend>Edit User</legend>
+        <label>First Name</label>
+        <input name="firstname" type="text" ng-model="user.firstname">
+        <label>Last Name</label>
+        <input name="lastname" type="text"  ng-model="user.lastname">
+        <label>Age</label>
+        <input name="age" type="text" ng-model="user.age">
+        <hr />
+       <button type="submit" class="btn" ng-click="updateUser()">Update</button>
+       <button class="btn btn-danger delete"  ng-click="deleteUser(user._id)" >Delete</button>
+    </form>

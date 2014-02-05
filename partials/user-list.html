@@ -1,0 +1,25 @@
+
+<a ng-click="createNewUser()" class="btn btn-primary">New</a>
+
+    
+<div class="span6">
+    <table class="table striped">
+        <thead>
+        <tr>
+            <th style="min-width: 80px;">First Name</th>
+            <th style="min-width: 80px;">Last Name</th>
+            <th style="min-width: 80px;">Age</th>
+            <th style="width:20px;">&nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in users">
+            <td>{{ user.firstname }}</td>
+            <td>{{ user.lastname }}</td>
+            <td>{{ user.age }}</td>
+            <td><a ng-click="editUser(user._id)" class="btn">Edit</a></td>
+        </tr>
+        </tbody>
+    </table>
+    
+</div>
